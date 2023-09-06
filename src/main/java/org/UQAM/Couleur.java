@@ -1,4 +1,4 @@
-package src.main.java.org.UQAM;
+package org.UQAM;
 
 public class Couleur {
     final int MAX_UNITE_COULEUR = 255;
@@ -6,6 +6,12 @@ public class Couleur {
     private int rouge;
     private int vert;
     private int bleu;
+
+    public Couleur(int rouge, int vert, int bleu) {
+        this.rouge = rouge;
+        this.vert = vert;
+        this.bleu = bleu;
+    }
 
     public int getRouge() {
         return rouge;
@@ -43,6 +49,12 @@ public class Couleur {
                     , MAX_UNITE_COULEUR);
             throw new RuntimeException(messageErreur);
         }
+    }
+
+    public void blanchir(){
+        rouge = ( rouge + 255 ) / 2;
+        vert = ( vert + 255 ) / 2;
+        bleu = ( bleu + 255 ) / 2;
     }
 
     @Override
