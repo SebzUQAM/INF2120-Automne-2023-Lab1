@@ -1,4 +1,4 @@
-package org.UQAM;
+package org.UQAM.Exercice_1;
 
 public class Couleur {
     final int MAX_UNITE_COULEUR = 255;
