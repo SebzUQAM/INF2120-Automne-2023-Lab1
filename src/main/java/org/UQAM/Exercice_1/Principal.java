@@ -1,4 +1,5 @@
 package org.UQAM.Exercice_1;
+// win+p
 
 public class Principal {
     public static void main(String[] args){

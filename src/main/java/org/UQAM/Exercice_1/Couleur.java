@@ -8,9 +8,9 @@ public class Couleur {
     private int bleu;
 
     public Couleur(int rouge, int vert, int bleu) {
-        this.rouge = rouge;
-        this.vert = vert;
-        this.bleu = bleu;
+        setRouge(rouge);
+        setVert(vert);
+        setBleu(bleu);
     }
 
     public int getRouge() {
